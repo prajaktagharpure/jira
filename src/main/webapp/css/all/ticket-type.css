@@ -1,0 +1,11 @@
+.ticket-type-container{
+  @mixin setDimensions 20px, 20px;
+  &.bug{
+    /*@mixin icon "img/bug.svg";*/
+    background: url("../img/bug.svg") no-repeat left top;
+  }
+
+  &.story{
+    background: url("../img/story.svg") no-repeat left top;
+  }
+}

@@ -1,0 +1,13 @@
+.main-board-container{
+
+  @mixin setGrid repeat(auto-fit, minmax(100px, 1fr)), auto, 10px, 35%;
+  background: #FFFFFF;
+  margin: 0 auto;
+  height: 100%;
+}
+
+.top-container{
+  background: #FFFFFF;
+  text-align: center;
+  padding: 10px;
+}

@@ -1,0 +1,50 @@
+{
+  "name": "jira",
+  "version": "1.0.0",
+  "description": "Project POC data management with Pubsub, RiotJS, PostCSS, ES6",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "watch:tags": "riot -w src/main/webapp/js/tags/ src/main/webapp/js/tags/tags.js",
+    "watch:css": "riot -w --ext css src/main/webapp/css/all src/main/webapp/css/main.css",
+    "watch:sandbox": "parcel src/main/webapp/dev/sandbox/sandbox.html",
+    "server": "json-server db.json --watch",
+    "start": "npm-run-all --parallel watch:sandbox server"
+  },
+  "repository": {
+    "type": "git"
+  },
+  "keywords": [
+    "riotjs",
+    "pubsub,",
+    "es6",
+    "javascript",
+    "postcss", "parcel"
+  ],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "autoprefixer": "^9.5.1",
+    "axios": "^0.18.0",
+    "babel-polyfill": "^6.26.0",
+    "less": "^3.9.0",
+    "npm-run-all": "^4.1.5",
+    "parcel-plugin-static-files-copy": "^2.0.0",
+    "postcss-import": "^12.0.1",
+    "postcss-mixins": "^6.2.1",
+    "postcss-nested": "^4.1.2",
+    "postcss-preset-env": "^6.6.0",
+    "postcss-simple-vars": "^5.0.2",
+    "postcss-url": "^8.0.0",
+    "pubsub-js": "^1.7.0",
+    "riot": "^3.13.2"
+  },
+  "staticFiles": {
+    "watcherGlob": "**"
+  },
+  "dependencies": {
+    "dragula": "^3.7.2",
+    "jquery": "^3.4.1",
+    "parcel-bundler": "^1.12.3"
+  }
+}

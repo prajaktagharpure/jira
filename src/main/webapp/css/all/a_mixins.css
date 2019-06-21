@@ -1,0 +1,17 @@
+@define-mixin icon $name {
+  /* background: url(../img/$(name).svg) no-repeat left top; */
+
+}
+
+@define-mixin setDimensions $width, $height {
+  width: $(width);
+  height: $(height);
+}
+
+@define-mixin setGrid $row, $column, $gap, $width {
+  display: grid;
+  grid-template-columns: $(row);
+  grid-template-rows: $(column);
+  width: $(width);
+  grid-column-gap: $(gap);
+}

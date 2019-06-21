@@ -1,0 +1,24 @@
+.ticket-label-container{
+  color: var(--ticketLabelDefaultColor);
+  border-radius: 4px;
+  display: inline-block;
+  margin: 4px 0;
+  font-style: italic;
+
+  &.ticket-label-color{
+    color: #FFFFFF;
+    font-style: normal;
+    margin: 10px 0;
+    padding: 0 8px;
+
+    &.ticketing{
+      background: var(--highPriorityColor);
+    }
+    &.cart{
+      background: var(--mediumPriorityColor);
+    }
+    &.difm{
+      background: var(--lowPriorityColor);
+    }
+  }
+}
